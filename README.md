@@ -21,7 +21,7 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
 | [Java GraalVM](https://github.com/Software-Noob/pterodactyl-images#java-graalvm-amd64arm64)                 | AMD64, ARM64        |
 | [Java Liberica](https://github.com/Software-Noob/pterodactyl-images#java-liberica-amd64arm64)               | AMD64, ARM64        |
 | [Java OpenJ9](https://github.com/Software-Noob/pterodactyl-images#java-openj9-amd64)                        | AMD64               |
-| [Java Oracle GraalVM](https://github.com/Minionguyjpro/pterodactyl-images#java-oracle-graalvm-amd64arm64)   | AMD64, ARM64        |
+| [Java Oracle GraalVM](https://github.com/FreakinSoftMania/pterodactyl-images-remastered#java-oracle-graalvm-amd64arm64)   | AMD64, ARM64        |
 | [Java Shenandoah](https://github.com/Software-Noob/pterodactyl-images#java-shenandoah-amd64arm64)           | AMD64, ARM64        |
 | [Node.js](https://github.com/Software-Noob/pterodactyl-images#nodejs-amd64arm64)                            | AMD64, ARM64        |
 | [Python](https://github.com/Software-Noob/pterodactyl-images#python-amd64arm64)                             | AMD64, ARM64        |
@@ -141,12 +141,14 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
   - `ghcr.io/software-noob/pterodactyl-images:java_21_openj9`
 
 ### Java Oracle GraalVM [AMD64/ARM64]
-- [Java 17 Oracle GraalVM](https://github.com/Minionguyjpro/pterodactyl-images/tree/main/java-oracle-graalvm/17)
-  - `ghcr.io/minionguyjpro/pterodactyl-images:java_17_oracle_graalvm`
-- [Java 21 Oracle GraalVM](https://github.com/Minionguyjpro/pterodactyl-images/tree/main/java-oracle-graalvm/21)
-  - `ghcr.io/minionguyjpro/pterodactyl-images:java_21_oracle_graalvm`
-- [Java 22 Oracle GraalVM](https://github.com/Minionguyjpro/pterodactyl-images/tree/main/java-oracle-graalvm/22)
-  - `ghcr.io/minionguyjpro/pterodactyl-images:java_22_oracle_graalvm`
+- [Java 17 Oracle GraalVM](https://github.com/FreakinSoftMania/pterodactyl-images-remastered/tree/main/java-oracle-graalvm/17)
+  - `ghcr.io/freakinsoftmania/pterodactyl-images-remastered:java_17_oracle_graalvm`
+- [Java 21 Oracle GraalVM](https://github.com/FreakinSoftMania/pterodactyl-images-remastered/tree/main/java-oracle-graalvm/21)
+  - `ghcr.io/freakinsoftmania/pterodactyl-images-remastered:java_21_oracle_graalvm`
+- [Java 22 Oracle GraalVM](https://github.com/FreakinSoftMania/pterodactyl-images-remastered/tree/main/java-oracle-graalvm/22)
+  - `ghcr.io/freakinsoftmania/pterodactyl-images-remastered:java_22_oracle_graalvm`
+- [Java 23 Oracle GraalVM](https://github.com/FreakinSoftMania/pterodactyl-images-remastered/tree/main/java-oracle-graalvm/22)
+  - `ghcr.io/freakinsoftmania/pterodactyl-images-remastered:java_23_oracle_graalvm`
 
 ### Java Shipilev Experimental [AMD64/ARM64]
 
