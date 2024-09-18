@@ -1,16 +1,17 @@
 FROM        azul/prime:8
 
-FROM        redhat/ubi9-minimal:latest
-
-LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
+LABEL       author="Software-noob" maintainer="admin@softwarenoob.com"
 LABEL       org.opencontainers.image.source="https://github.com/Software-Noob/pterodactyl-images"
 LABEL       org.opencontainers.image.licenses="MIT"
 
-RUN         microdnf update \
-            && microdnf remove -y curl-minimal \
-            && microdnf install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute gcc gcc-c++ freetype libstdc++ lsof glibc-locale-source glibc-langpack-en \
-            && microdnf clean all \
-            && adduser --home-dir /home/container container
+ENV         DEBIAN_FRONTEND noninteractive
+
+RUN         apt-get update \
+            && apt-get -y install --no-install-recommends curl ffmpeg iproute2 git sqlite3 python3 tzdata ca-certificates dnsutils fontconfig libfreetype6 libstdc++6 lsof build-essential locales \
+            && apt-get clean \
+            && rm -rf /var/lib/apt/lists/* \
+            && useradd -m -d /home/container container \
+            && locale-gen en_US.UTF-8
 
 ENV         LC_ALL=en_US.UTF-8
 ENV         LANG=en_US.UTF-8
