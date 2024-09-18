@@ -7,7 +7,8 @@ LABEL       org.opencontainers.image.source="https://github.com/Software-Noob/pt
 LABEL       org.opencontainers.image.licenses="MIT"
 
 RUN         microdnf update \
-            && microdnf install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute gcc gcc-c++ freetype libstdc++ lsof glibc-locale-source glibc-langpack-en \
+            && microdnf remove -y curl-minimal \
+	    && microdnf install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute gcc gcc-c++ freetype libstdc++ lsof glibc-locale-source glibc-langpack-en \
             && microdnf clean all \
             && adduser --home-dir /home/container container
 
