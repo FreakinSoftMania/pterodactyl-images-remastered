@@ -1,5 +1,7 @@
 FROM        azul/prime:21
 
+FROM        redhat/ubi9-minimal:latest
+
 LABEL       author="Softwarenoob" maintainer="admin@softwarenoob.com"
 LABEL       org.opencontainers.image.source="https://github.com/Software-Noob/pterodactyl-images"
 LABEL       org.opencontainers.image.licenses="MIT"
