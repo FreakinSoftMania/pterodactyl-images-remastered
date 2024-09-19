@@ -5,7 +5,7 @@ LABEL       org.opencontainers.image.source="https://github.com/Software-Noob/pt
 LABEL       org.opencontainers.image.licenses="MIT"
 
 RUN         yum upgrade -y \
-            && yum install -y curl ca-certificates openssl git tar sqlite fontconfig freetype libstdc++.so.6 freetype-devel lsof build-essential tzdata iproute \
+            && yum install -y curl ca-certificates openssl git tar sqlite fontconfig freetype libstdc++ freetype-devel lsof build-essential tzdata iproute \
             git gcc gcc-c++ automake make libtool \
             && yum clean all \
             && rm -rf /var/cache/yum \
